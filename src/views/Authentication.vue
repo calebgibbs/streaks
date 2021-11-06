@@ -1,11 +1,13 @@
 <template>
   <div class="landing landing-form">
     <h1 class="landing-h1">Streaks</h1> 
-    <div v-if="showLogin">
+    <div v-if="showLogin"> 
+      <h2>Login</h2>
       <Login/> 
       <p>Don't have an account? <span @click="showLogin = !showLogin">Sign up.</span></p>
     </div> 
-    <div v-else>
+    <div v-else> 
+      <h2>Sign up</h2>
       <Signup/> 
       <p>Already have an account? <span @click="showLogin = !showLogin">Login.</span></p>
     </div>
@@ -40,6 +42,12 @@ $bg: #fff;
   margin: 0 auto; 
   transform: translateY(-50%);
   border-radius: 20px; 
+} 
+
+h2 { 
+  text-align: center; 
+  margin: -1rem, 0, 1rem; 
+  color: rgba(#2c3e50, 0.8)
 }
 
 .landing { 

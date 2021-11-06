@@ -3,7 +3,7 @@
     <div v-if="!creatingStreak" class="number">New</div> 
     <div v-else class="activeNumber">0</div> 
     <div class="title">
-      <input type="text" v-model="streakName" @blur=" creatingStreak = !creatingStreak " @focus=" creatingStreak = !creatingStreak " :class="{ activeBorder: creatingStreak }">
+      <input type="text" v-model="streakName" @focus="creatingStreak = true" :class="{ activeBorder: creatingStreak }">
     </div> 
     <div class="buttons">
       <div class="changeButton">

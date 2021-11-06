@@ -34,7 +34,7 @@
   margin: 0 auto; 
   display: grid;  
   padding-top: 5rem;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(3, 1fr); 
   justify-items: center;
 }
 </style>
