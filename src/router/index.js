@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Streaks from '../views/Streaks.vue'
+import Streaks from '../views/Landing.vue'
 import Authentication from '../views/Authentication.vue'
 
 const routes = [
