@@ -1,6 +1,6 @@
 <template>
   <div class="landing landing-form">
-    <h1>Streaks</h1> 
+    <h1 class="landing-h1">Streaks</h1> 
     <div v-if="showLogin">
       <Login/> 
       <p>Don't have an account? <span @click="showLogin = !showLogin">Sign up.</span></p>
@@ -31,7 +31,7 @@ import { ref } from '@vue/reactivity'
 
 <style lang="scss">
 $bg: #fff;
-h1 { 
+.landing-h1 { 
   margin: 0; 
   text-align: center; 
   padding: 1.5rem; 

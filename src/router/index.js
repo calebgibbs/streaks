@@ -1,11 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Landing from '../views/Landing.vue'
+import Streaks from '../views/Streaks.vue'
+import Authentication from '../views/Authentication.vue'
 
 const routes = [
  {
    path: '/', 
-   name: 'Landing', 
-   component: Landing
+   name: 'Streaks', 
+   component: Streaks
+ }, 
+ {
+    path: '/login',
+    name: 'Login', 
+    component: Authentication 
  }
 ]
 
