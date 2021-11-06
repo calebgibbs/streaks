@@ -5,22 +5,20 @@
       <Streak/>
       <Streak/>
       <Streak/>
-      <Streak/>
-      <Streak/>
-      <Streak/>
-      <Streak/>
-      <Streak/>
+      <AddStreak/>
     </div>
   </div>
 </template>
 
 <script>
   import Nav from '../components/Nav.vue' 
-  import Streak from '../components/StreakComponent.vue'
+  import Streak from '../components/StreakComponent.vue' 
+  import AddStreak from '../components/AddStreak.vue'
   export default {
     components: {
       Nav, 
-      Streak
+      Streak, 
+      AddStreak
     }
   }
 </script>
