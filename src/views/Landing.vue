@@ -1,16 +1,31 @@
 <template>
   <div class="landing landing-form">
     <h1>Streaks</h1> 
-    <Login/>
+    <div v-if="showLogin">
+      <Login/> 
+      <p>Don't have an account? <span @click="showLogin = !showLogin">Sign up.</span></p>
+    </div> 
+    <div v-else>
+      <Signup/> 
+      <p>Already have an account? <span @click="showLogin = !showLogin">Login.</span></p>
+    </div>
   </div>
 </template>
 
 <script>
-  import Login from '../components/Login.vue'
+import { ref } from '@vue/reactivity'
+  import Login from '../components/Login.vue' 
+  import Signup from '../components/Signup.vue'
   export default {
     components: {
-      Login
-    }  
+      Login, 
+      Signup
+    }, 
+    setup() { 
+      const showLogin = ref(true)
+
+      return {showLogin}
+    }
   }
 </script>
 
@@ -63,7 +78,19 @@ h1 {
     &:hover {
       opacity: 1;
     }
-  }
+  } 
+}  
+
+p { 
+  text-align: center; 
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+span { 
+  color: #000; 
+  border-bottom: 1px solid #000; 
+  cursor: pointer;
 } 
 
 </style>
