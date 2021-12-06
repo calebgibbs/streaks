@@ -31,7 +31,7 @@ import { ref } from '@vue/reactivity'
 <style lang="scss" scoped> 
 .outer { 
   border: 3px solid rgba(#2d4157, .5);  
-  border-style: dashed;
+  border-style: dotted;
   width: 80%; 
   border-radius: 15px; 
   padding: .5rem; 
